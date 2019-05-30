@@ -1,0 +1,19 @@
+form.candidateForm {
+  font-size: 25px;
+  color: #666;
+
+  div {
+    padding-top: 10px;
+
+    input[type="text"], textarea {
+      font-size: 30px;
+    }
+  }
+
+  input[type="submit"] {
+    border-radius: 10px;
+    color: #666;
+    background-color: pink;
+    font-size: 25px;
+  }
+}

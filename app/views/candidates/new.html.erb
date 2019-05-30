@@ -1,0 +1,29 @@
+<h1>New Candidate</h1>
+<a href="/candidates">Back to Candidates List</a>
+
+<%= form_for(@candidate, html: { class: 'candidateForm' }) do |form| %>
+<!-- @candidate 是深層部分，所以要到 Controller 去查看 -->
+
+  <div>
+    <%= form.label :name, 'Name' %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :age, 'Age' %>
+    <%= form.text_field :age %>
+  </div>
+
+  <div>
+    <%= form.label :party, 'Party' %>
+    <%= form.text_field :party %>
+  </div>
+
+  <div>
+    <%= form.label :policy, 'Policy' %>
+    <%= form.text_area :policy %>
+  </div>
+
+  <input type="submit" value="New Candidate">
+
+<% end %>
